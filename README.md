@@ -1,12 +1,13 @@
 # seff-array 
 
-An extension of the Slurm command 'seff' designed to handle job arrays and offers the option to display information in a histogram.       
+An extension of the Slurm command 'seff' designed to handle job arrays and offers the option to display information in a histogram. Note getting GPU stats depends on having [Job Summaries](https://princetonuniversity.github.io/jobstats/setup/summaries/) stored in the AdminComment of sacct from [Princeton Jobstats](https://princetonuniversity.github.io/jobstats/).
 
 seff-array generates three types of histograms: 
 
-    1. CPU Efficiency (utilization vs runtime)
-    1. Maximum memory usage versus the requested memory
-    2. Runtime of each job compared to the requested wall-time
+  1. CPU Efficiency (utilization vs runtime)
+  2. GPU Efficiency (From [Princeton Job Stats](https://princetonuniversity.github.io/jobstats/))
+  3. Maximum memory usage versus the requested memory
+  4. Runtime of each job compared to the requested wall-time
 
 ## Usage:
 
